@@ -1,0 +1,44 @@
+.sidebar {
+    grid-area: ns;
+    background-color: rgb(227, 143, 235);
+    padding: 20px;
+}
+
+
+ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+a {
+text-decoration: none;
+color: rgb(11, 116, 46);
+}
+
+a.activeChoice {
+color: rgb(30, 255, 0);
+}
+
+.friendsSidebar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.friendsList {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.friendPortrait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.friendIcon {
+    height: 40px;
+    width: auto;
+    border-radius: 100%;
+}

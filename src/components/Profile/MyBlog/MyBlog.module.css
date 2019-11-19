@@ -1,0 +1,9 @@
+.myblog {
+    background-color: rgb(170, 209, 120);
+}
+.inputPost {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

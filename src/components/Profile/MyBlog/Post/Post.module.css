@@ -1,0 +1,17 @@
+.author {
+    background-color: rgb(255, 252, 88);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.avatar {
+    width: 50px;
+    border-radius: 30px;
+}
+.message {
+    margin: 10px;
+}
+.likesCount {
+    margin: 10px;
+    color: red;
+}

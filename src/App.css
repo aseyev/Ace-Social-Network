@@ -1,0 +1,15 @@
+.app_wrapper {
+    max-width: 1170px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+        "he he"
+        "ns ac";
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 2fr 10fr;
+    /* grid-gap: 10px; */
+}
+
+.allcontent {
+    grid-area: ac;
+}
