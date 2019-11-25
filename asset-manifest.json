@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Ace-Social-Network/static/css/main.705b4c5f.chunk.css",
-    "main.js": "/Ace-Social-Network/static/js/main.acf7917a.chunk.js",
-    "main.js.map": "/Ace-Social-Network/static/js/main.acf7917a.chunk.js.map",
+    "main.js": "/Ace-Social-Network/static/js/main.12955559.chunk.js",
+    "main.js.map": "/Ace-Social-Network/static/js/main.12955559.chunk.js.map",
     "runtime-main.js": "/Ace-Social-Network/static/js/runtime-main.dce0841e.js",
     "runtime-main.js.map": "/Ace-Social-Network/static/js/runtime-main.dce0841e.js.map",
     "static/js/2.c5f0dbb8.chunk.js": "/Ace-Social-Network/static/js/2.c5f0dbb8.chunk.js",
     "static/js/2.c5f0dbb8.chunk.js.map": "/Ace-Social-Network/static/js/2.c5f0dbb8.chunk.js.map",
     "index.html": "/Ace-Social-Network/index.html",
-    "precache-manifest.865ce6540362e08ead02934deb778dc3.js": "/Ace-Social-Network/precache-manifest.865ce6540362e08ead02934deb778dc3.js",
+    "precache-manifest.d7bff8ef8ff2e666768094980eaf14ab.js": "/Ace-Social-Network/precache-manifest.d7bff8ef8ff2e666768094980eaf14ab.js",
     "service-worker.js": "/Ace-Social-Network/service-worker.js",
     "static/css/main.705b4c5f.chunk.css.map": "/Ace-Social-Network/static/css/main.705b4c5f.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.dce0841e.js",
     "static/js/2.c5f0dbb8.chunk.js",
     "static/css/main.705b4c5f.chunk.css",
-    "static/js/main.acf7917a.chunk.js"
+    "static/js/main.12955559.chunk.js"
   ]
 }
