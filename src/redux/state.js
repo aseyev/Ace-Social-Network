@@ -1,80 +1,108 @@
-let rerenderEntireTree = () => {
-    console.log('state is changed!')
-}
+const ADD_POST = "ADD-POST";
+const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 
-let state = {
-    dialogsPage: {
-        dialogs: [
-            { id: 1, name: "Dimych" },
-            { id: 2, name: "wife" },
-            { id: 3, name: "bro" }
-        ],
+const SEND_MESSAGE = "SEND_MESSAGE";
+const UPDATE_NEW_MESSAGE_BODY = "UPDATE_NEW_MESSAGE_BODY";
 
-        messages: [
-            { id: 0, author: "me", message: "Hi" },
-            { id: 1, author: "Dimych", message: "how r u" },
-            { id: 2, author: "me", message: "great what's new?" },
-            { id: 3, author: "Dimych", message: "let's learn React!" },
-            { id: 4, author: "me", message: "Come on, let's start!" }
-        ]
+let store = {
+    _state: {
+        dialogsPage: {
+            dialogs: [
+                { id: 1, name: "Dimych" },
+                { id: 2, name: "wife" },
+                { id: 3, name: "bro" }
+            ],
+
+            messages: [
+                { id: 0, author: "me", message: "Hi" },
+                { id: 1, author: "Dimych", message: "how r u" },
+                { id: 2, author: "me", message: "great what's new?" },
+                { id: 3, author: "Dimych", message: "let's learn React!" },
+                { id: 4, author: "me", message: "Come on, let's start!" }
+            ],
+            newMessageBody: ""
+        },
+        profilePage: {
+            posts: [
+                { id: 0, post: "It's my blog", likes: 3 },
+                { id: 1, post: "I was a designer for 10 years", likes: 5 },
+                { id: 2, post: "Now I'm starting to learn React", likes: 9 }
+            ],
+            newPostText: ""
+        },
+        friendsPage: {
+            friends: [
+                {
+                    id: 0,
+                    name: "me",
+                    linkto:
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qSOrkr1kqwdgdyuHRxwG_78gd3fX2S9SAMqPGwJQLipr_Loe&s"
+                },
+                {
+                    id: 1,
+                    name: "Dimych",
+                    linkto:
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBY_mo1rQhrhsQTkX3jYf4NlJ_3G373KksH8YStqpH9Ie0Mmagrg&s"
+                },
+                {
+                    id: 2,
+                    name: "wife",
+                    linkto:
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPaHmYCx5J4tzO1c7OSThTK5U99OsZgx2sD9VhnjTb3SeCPjrM&s"
+                },
+                {
+                    id: 3,
+                    name: "bro",
+                    linkto:
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2WGfX5qsWFPFmBCE-g8KRk7SS-V1HXZo2vX8dRYOw0NrhtcV6&s"
+                }
+                //https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOGsz4cwsoNq09gMJ3roiDb8rOoRAoNr1DBn3PesZh1pnstzBS&s
+                //https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHk85P6r1iGSHDaJ286R2Ml5oTlwJoQAAxh5Y5SBl7Ju3THMaV&s
+            ]
+        }
     },
-    profilePage: {
-        posts: [
-            { id: 0, post: "It's my blog", likes: 3 },
-            { id: 1, post: "I was a designer for 10 years", likes: 5 },
-            { id: 2, post: "Now I'm starting to learn React", likes: 9 }
-        ],
-        newPostText:''
+    getState() {
+        return this._state;
     },
-    friendsPage: {
-        friends: [
-            {
-                id: 0,
-                name: "me",
-                linkto:
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qSOrkr1kqwdgdyuHRxwG_78gd3fX2S9SAMqPGwJQLipr_Loe&s"
-            },
-            {
-                id: 1,
-                name: "Dimych",
-                linkto:
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBY_mo1rQhrhsQTkX3jYf4NlJ_3G373KksH8YStqpH9Ie0Mmagrg&s"
-            },
-            {
-                id: 2,
-                name: "wife",
-                linkto:
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPaHmYCx5J4tzO1c7OSThTK5U99OsZgx2sD9VhnjTb3SeCPjrM&s"
-            },
-            {
+    _callSubscriber() {
+        console.log("state is changed!");
+    },
+    subscribe(observer) {
+        this._callSubscriber = observer;
+    },
+
+    dispatch(action) {
+        if (action.type === ADD_POST) {
+            let newPost = {
                 id: 3,
-                name: "bro",
-                linkto:
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2WGfX5qsWFPFmBCE-g8KRk7SS-V1HXZo2vX8dRYOw0NrhtcV6&s"
-            }
-            //https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOGsz4cwsoNq09gMJ3roiDb8rOoRAoNr1DBn3PesZh1pnstzBS&s
-            //https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHk85P6r1iGSHDaJ286R2Ml5oTlwJoQAAxh5Y5SBl7Ju3THMaV&s
-        ]
+                post: this._state.profilePage.newPostText,
+                likes: 0
+            };
+            this._state.profilePage.posts.push(newPost);
+            this._state.profilePage.newPostText = "";
+            this._callSubscriber(this._state);
+        } else if (action.type === UPDATE_NEW_POST_TEXT) {
+            this._state.profilePage.newPostText = action.newText;
+            this._callSubscriber(this._state);
+        } else if (action.type === UPDATE_NEW_MESSAGE_BODY) {
+            this._state.dialogsPage.newMessageBody = action.body;
+            this._callSubscriber(this._state);
+        } else if (action.type === SEND_MESSAGE) {
+            let body = this._state.dialogsPage.newMessageBody;
+            this._state.dialogsPage.newMessageBody = "";
+            this._state.dialogsPage.messages.push({ id: 9, author: "me", message: body });
+            this._callSubscriber(this._state);
+        }
     }
 };
 
-export const addPost = () => {
-    let newPost = {
-        id: 3,
-        post: state.profilePage.newPostText,
-        likes: 0
-    }
-    state.profilePage.posts.push(newPost);
-    state.profilePage.newPostText = '';
-    rerenderEntireTree (state);
-}
+export const addPostActionCreator = () => ({type: ADD_POST});
+export const updateNewPostTextActionCreator = text => 
+    ({type: UPDATE_NEW_POST_TEXT, newText: text});
 
-export const updateNewPostText = (newText) => {
-    state.profilePage.newPostText = newText;
-    rerenderEntireTree (state);
-}
+export const sendNewMessageCreator = () => ({type: SEND_MESSAGE});
+export const updateNewMessageBodyCreator = body => 
+    ({type: UPDATE_NEW_MESSAGE_BODY, body: body});
 
-export const subscribe = (observer) => {
-    rerenderEntireTree = observer;
-}
-export default state;
+export default store;
+window.store = store;

@@ -10,8 +10,7 @@ const Profile = props => {
         <div className={s.profileStyle}>
             <ProfileInfo/>
             <MyBlog profilePage={props.profilePage} 
-            addPost={props.addPost} 
-            updateNewPostText={props.updateNewPostText}
+            dispatch={props.dispatch} 
             />
         </div>
     );
