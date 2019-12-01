@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+    }
 .app_wrapper {
     max-width: 1170px;
     margin: auto;
@@ -12,4 +15,5 @@
 
 .allcontent {
     grid-area: ac;
+    background-color: rgb(234, 255, 143);
 }

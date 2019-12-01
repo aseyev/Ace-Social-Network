@@ -13,7 +13,9 @@ const App = props => {
     return (
         <div className="app_wrapper">
             <Header />
-            <Navbar friendsPage={props.state.friendsPage} />
+            <Navbar friendsPage={props.state.friendsPage}
+            dispatch={props.dispatch} 
+            />
             <div className="allcontent">
                 <Route
                     path="/dialogs"
