@@ -7,9 +7,9 @@ import navbarReducer from './navbar-reducer';
 
 
 let reducers = combineReducers({
-    profileReducer,
-    dialogsReducer,
-    navbarReducer
+    profilePage: profileReducer,
+    dialogsPage: dialogsReducer,
+    friendsPage: navbarReducer
 });
 
 let store = createStore(reducers);

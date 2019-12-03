@@ -2,9 +2,10 @@ import React from "react";
 import PersonDialog from "./PersonDialog/PersonDialog";
 import Message from "./Message/Message";
 import s from "./Dialogs.module.css";
-import {updateNewMessageBodyCreator, sendNewMessageCreator} from "../../redux/dialogs-reducer" ;
 
 const Dialogs = props => {
+
+    // let state = props.store.getState().dialogsPage;
     
     let dialogsListing = props.dialogsPage.dialogs.map( d => <PersonDialog id={d.id} name={d.name} /> )
     let messagesListing = props.dialogsPage.messages.map( m => <Message messages={m} />)
@@ -13,11 +14,11 @@ const Dialogs = props => {
     // let newMessageElement = React.createRef()
 
     let onSendMessageClick = () => {
-        props.dispatch(sendNewMessageCreator())
+        props.onSendMessageClick()
     }
-    let onNewMessageChange = (e) => {
-        let body = e.target.value;
-        props.dispatch(updateNewMessageBodyCreator(body))
+    let onNewMessageChange = (newMessageElement) => {
+        let body = newMessageElement.target.value;
+        props.onNewMessageChange(body);
     }
 
     return (

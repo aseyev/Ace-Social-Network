@@ -8,9 +8,10 @@ const Post = props => {
                 src="https://i.pinimg.com/originals/80/f3/cd/80f3cd1517905873ea6a5c5ed7b53784.jpg"
                 alt="post photo"
             />
-            <div className={s.post}>{props.post}</div>
-            <button>like</button>
+            <div className={s.posttext}>{props.post}</div>
+            
             <div className={s.likesCount}>likes: {props.likesCount}</div>
+            <button>like</button>
         </div>
     );
 };

@@ -1,21 +1,19 @@
 import React from "react";
-import MyBlog from "./MyBlog/MyBlog";
 import ProfileInfo from "./MyBlog/ProfileInfo/ProfileInfo";
 import s from "./Profile.module.css";
+import MyBlogContainer from './MyBlog/MyBlogContainer';
 
 
-const Profile = props => {
+const Profile = () => {
     
     return (
         <div className={s.profileStyle}>
             <ProfileInfo/>
-            <MyBlog profilePage={props.profilePage} 
-            dispatch={props.dispatch} 
-            />
+            <MyBlogContainer />
         </div>
     );
 };
-// export posts;
+
 export default Profile;
 
 
