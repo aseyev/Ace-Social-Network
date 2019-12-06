@@ -27,6 +27,9 @@ const Navbar = props => {
                         <NavLink to="/dialogs" activeClassName={s.activeChoice} >Dialogs</NavLink>
                     </li>
                     <li>
+                        <NavLink to="/findusers" activeClassName={s.activeChoice} >Find Users</NavLink>
+                    </li>
+                    <li>
                         <NavLink to="/news" activeClassName={s.activeChoice} >News</NavLink>
                     </li>
                     <li>

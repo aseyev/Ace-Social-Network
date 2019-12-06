@@ -1,0 +1,25 @@
+.usersBG {
+    background: rgb(129, 197, 66);
+    height: 100%;
+  }
+
+.userBlock {
+  display: flex;
+  margin-bottom: 20px;
+}
+.userLeft {
+  margin-right: 10px;
+}
+.userLeft img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.userCenter {
+  display: flex;
+  margin-bottom: 10px;
+}
+.userRight {
+  display: flex;
+}
