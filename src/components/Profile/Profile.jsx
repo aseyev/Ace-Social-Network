@@ -4,11 +4,11 @@ import s from "./Profile.module.css";
 import MyBlogContainer from './MyBlog/MyBlogContainer';
 
 
-const Profile = () => {
+const Profile = (props) => {
     
     return (
         <div className={s.profileStyle}>
-            <ProfileInfo/>
+            <ProfileInfo profile={props.profile} />
             <MyBlogContainer />
         </div>
     );

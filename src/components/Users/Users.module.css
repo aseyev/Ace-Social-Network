@@ -1,25 +1,47 @@
 .usersBG {
     background: rgb(129, 197, 66);
     height: 100%;
-  }
+}
+.usersList {
+    display: flex;
+    max-width: 800px;
+    flex-flow: wrap;
+}
 
+.pagination ul {
+    list-style: none;
+    display: flex;
+}
+.pagination li {
+    margin: 5px;
+}
+.selectedPage {
+    font-weight: bold;
+
+}
 .userBlock {
-  display: flex;
-  margin-bottom: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: bisque;
+    border-radius: 5px;
+    margin: 5px;
 }
 .userLeft {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 .userLeft img {
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
 }
 
 .userCenter {
-  display: flex;
-  margin-bottom: 10px;
+    display: flex;
+    margin-bottom: 10px;
 }
 .userRight {
-  display: flex;
+    display: flex;
+    min-width: 100px;
 }

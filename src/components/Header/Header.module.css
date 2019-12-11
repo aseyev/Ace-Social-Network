@@ -10,3 +10,11 @@
     height: 80px;
     width: auto;
 }
+
+.loginBlock {
+    float: right;
+    min-height: 60px;
+    min-width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
