@@ -9,16 +9,19 @@ let initialState = {
     },
     messages:[],
     resultCode:0,
-    isFetching: true
+    isFetching: false,
+    isAuth: false
 };
 
 const authReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_USER_DATA:
-            debugger
+            
             return {
                 ...state,
-                ...action.data // data from here (second line) will rewrite existed properties with same name
+                data: action.data,
+                isAuth: true
+                 // data from here (second line) will rewrite existed properties with same name
             };
 
     default:

@@ -4,6 +4,7 @@ import dialogsReducer from './dialogs-reducer';
 import navbarReducer from './navbar-reducer';
 import usersReducer from './users-reducer';
 import authReducer from './auth-reducer';
+
 // import React from 'react';
 
 
@@ -18,5 +19,7 @@ let reducers = combineReducers({
 });
 
 let store = createStore(reducers);
+
+window.store = store;
 
 export default store;
