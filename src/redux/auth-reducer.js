@@ -1,3 +1,4 @@
+import { dimychAPI } from '../api/api';
 const SET_USER_DATA = "SET_USER_DATA";
 
 // {"data":{"id":5434,"login":"0nton","email":"dunkip24@gmail.com"},"messages":[],"resultCode":0}
@@ -28,8 +29,18 @@ const authReducer = (state = initialState, action) => {
             return state;
     }
 };
-//export of functions - action-creators to components
-//these AC-functions just give a class to 
+
 export const setAuthUserData = (id, login, email) => ({ type: SET_USER_DATA, data: {id, login, email} });
+
+export const getAuthUserData = () => (dispatch) => {
+    return dimychAPI.authMe()
+    .then(data => {
+        if (data.resultCode === 0) {
+            let {id, login, email} = data.data;
+            dispatch(setAuthUserData(id, login, email));
+        }
+    })
+
+}
 
 export default authReducer;
