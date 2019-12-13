@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "90e37d61b3611be0714537af47e724c0",
+    "revision": "1160c05049ed9997a6f76db6452bde2e",
     "url": "/Ace-Social-Network/index.html"
   },
   {
-    "revision": "2b6cab83b6fb4981fe0e",
+    "revision": "029ce3ca91b9f4da8127",
     "url": "/Ace-Social-Network/static/css/main.47ac1243.chunk.css"
   },
   {
-    "revision": "2b3e82e61ec52cf80849",
-    "url": "/Ace-Social-Network/static/js/2.196d8d34.chunk.js"
+    "revision": "b099e7f3e7e9f0e1cf74",
+    "url": "/Ace-Social-Network/static/js/2.7547ca2a.chunk.js"
   },
   {
-    "revision": "2b6cab83b6fb4981fe0e",
-    "url": "/Ace-Social-Network/static/js/main.2b9bdec4.chunk.js"
+    "revision": "029ce3ca91b9f4da8127",
+    "url": "/Ace-Social-Network/static/js/main.e61c0bd6.chunk.js"
   },
   {
     "revision": "53285d4abef59c25889e",
@@ -28,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Ace-Social-Network/static/media/logoOwl.aef702cb.webp"
   },
   {
-    "revision": "a67153fdc30773e3332884ce3118cdc0",
-    "url": "/Ace-Social-Network/static/media/preloader2.a67153fd.svg"
+    "revision": "2e134295b82c28e642481f62eb634466",
+    "url": "/Ace-Social-Network/static/media/preloader2.2e134295.svg"
   }
 ]);
