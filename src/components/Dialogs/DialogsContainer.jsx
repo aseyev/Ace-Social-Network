@@ -1,25 +1,10 @@
-import React from "react";  
+import React from "react";
+import { Redirect } from "react-router-dom";
 import {updateNewMessageBodyCreator, sendNewMessageCreator} from "../../redux/dialogs-reducer" ;
 import Dialogs from './Dialogs';
 import { connect } from 'react-redux';
-
-// const DialogsContainer = props => {
-
-//     let state = props.store.getState().dialogsPage;
-
-//     let sendMessageClick = () => {
-//         props.store.dispatch(sendNewMessageCreator())
-//     }
-//     let newMessageChange = (body) => {
-//         props.store.dispatch(updateNewMessageBodyCreator(body))
-//     }
-
-//     return (
-//         <Dialogs dialogsPage = {state}
-//                 onSendMessageClick = {sendMessageClick}
-//                 onNewMessageChange = {newMessageChange} />
-//     );
-// };
+import { withLoginRedirect } from '../../hoc/withLoginRedirect';
+import { compose } from 'redux';
 
 
 let mapStateToProps = (state) => {
@@ -34,7 +19,5 @@ let mapDispatchToProps = (dispatch) => {
         onNewMessageChange: (body) => {dispatch(updateNewMessageBodyCreator(body))}
     }
 }
-
-const DialogsContainer = connect(mapStateToProps, mapDispatchToProps)(Dialogs);
-
-export default DialogsContainer;
+export default compose ( connect( mapStateToProps, mapDispatchToProps),
+    withLoginRedirect) ( Dialogs );

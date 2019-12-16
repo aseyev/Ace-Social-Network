@@ -3,23 +3,6 @@ import {updateNewPostTextActionCreator, addPostActionCreator} from "../../../red
 import MyBlog from './MyBlog';
 import { connect } from 'react-redux';
 
-// const MyBlogContainer = props => {
-    
-//     let state = props.store.getState();
-
-//     let addPost = () => {
-//         props.store.dispatch(addPostActionCreator());
-//     }
-
-//     let onPostChange = (text) => {
-//         props.store.dispatch(updateNewPostTextActionCreator(text));
-//     }
-
-
-//     return (<MyBlog updateNewPostText={onPostChange} addPost={addPost} 
-//                     posts={state.profilePage.posts}
-//                     newPostText = {state.profilePage.newPostText} />);
-// };
 
 let mapStateToProps = (state) => {
     return {

@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./ProfileInfo.module.css";
 import Preloader from '../../../common/preloader/Preloader';
+import ProfileStatus from './ProfileStatus';
 
 const ProfileInfo = (props) => {
 
@@ -9,14 +10,9 @@ const ProfileInfo = (props) => {
     } 
     return (
         <div>
-            <img
-                className={s.imgheader}
-                src="https://www.beststartcompton.org/wp-content/uploads/2019/02/39875853-header-wallpapers.jpg"
-                alt="content-header"
-            />
-
-            <div className={s.profileinfo}>
+                <div className={s.profileinfo}>
                 <div>{props.profile.fullName}</div>
+                <ProfileStatus status={"doubleclick me"} />
                 <img src={props.profile.photos.large} alt={props.profile.fullName} />
                 <div>{props.profile.contacts.facebook}</div>
                 <div>{props.profile.lookingForAJobDescription}</div>

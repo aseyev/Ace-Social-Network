@@ -5,7 +5,7 @@ import MyBlogContainer from './MyBlog/MyBlogContainer';
 
 
 const Profile = (props) => {
-    
+
     return (
         <div className={s.profileStyle}>
             <ProfileInfo profile={props.profile} />

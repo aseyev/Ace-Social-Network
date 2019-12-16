@@ -4,14 +4,10 @@ import Message from "./Message/Message";
 import s from "./Dialogs.module.css";
 
 const Dialogs = props => {
-
-    // let state = props.store.getState().dialogsPage;
     
     let dialogsListing = props.dialogsPage.dialogs.map( d => <PersonDialog id={d.id} name={d.name} /> )
     let messagesListing = props.dialogsPage.messages.map( m => <Message messages={m} />)
     let newMessageBody = props.dialogsPage.newMessageBody;
-
-    // let newMessageElement = React.createRef()
 
     let onSendMessageClick = () => {
         props.onSendMessageClick()

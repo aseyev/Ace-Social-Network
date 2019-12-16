@@ -9,6 +9,7 @@ import NavbarContainer from './components/Navbar/NavbarContainer';
 import UsersContainer from './components/Users/UsersContainer';
 import ProfileContainer from './components/Profile/ProfileContainer';
 import HeaderContainer from "./components/Header/HeaderContainer";
+import LoginPage from './components/Login/Login';
 
 const App = props => {
     
@@ -33,6 +34,12 @@ const App = props => {
                     path="/findusers"
                     render={() => (
                         <UsersContainer />
+                    )}
+                />
+                <Route
+                    path="/login"
+                    render={() => (
+                        <LoginPage />
                     )}
                 />
                 <Route path="/news" component={News} />

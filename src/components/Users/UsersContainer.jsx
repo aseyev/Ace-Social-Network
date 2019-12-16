@@ -10,6 +10,8 @@ import {
 import Users from './Users';
 import s from "./Users.module.css";
 import Preloader from '../common/preloader/Preloader';
+import { withLoginRedirect } from '../../hoc/withLoginRedirect';
+import { compose } from 'redux';
 
 
 class UsersComponent extends React.Component {
@@ -33,16 +35,15 @@ class UsersComponent extends React.Component {
                 follow={this.props.follow}
                 unfollow={this.props.unfollow}
                 onPageChanged={this.onPageChanged}
-                // toggleFollowingProgress={this.props.toggleFollowingProgress}
                 followingInProgress={this.props.followingInProgress} 
                 />
         </div>
     }
 }
 
-
 let mapStateToProps = (state) => {
     return {
+        // isAuth: state.auth.isAuth,
         users: state.usersPage.users,
         pageSize: state.usersPage.pageSize,
         totalUsersCount: state.usersPage.totalUsersCount,
@@ -52,6 +53,7 @@ let mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, 
-    {follow, unfollow, setCurrentPage, 
-        toggleFollowingProgress, getUsers})(UsersComponent);
+export default compose (
+    connect(mapStateToProps, {follow, unfollow, setCurrentPage, toggleFollowingProgress, getUsers}), 
+    withLoginRedirect
+)(UsersComponent)

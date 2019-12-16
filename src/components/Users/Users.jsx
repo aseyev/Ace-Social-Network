@@ -2,7 +2,6 @@ import React from 'react';
 import s from "./Users.module.css";
 import userTemplatePic from "../../assets/images/cat-avatar.png";
 import { NavLink } from 'react-router-dom';
-import { follow, unfollow } from '../../redux/users-reducer';
 
 let Users = (props) => {
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
@@ -10,6 +9,7 @@ let Users = (props) => {
     for (let i = 1; i <= pagesCount; i++) {
         pages.push(i);
     }
+
     return <div className={s.usersBG}>
         <div className={s.pagination}>
             <ul>
