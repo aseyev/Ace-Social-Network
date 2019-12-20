@@ -1,7 +1,7 @@
-import { dimychAPI } from "../api/api";
+import { dimychAPI, profileAPI } from '../api/api';
 const ADD_POST = "ADD-POST";
-const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 const SET_USER_PROFILE = "SET_USER_PROFILE";
+const SET_STATUS = "SET_STATUS";
 
 let initialState = {
     posts: [
@@ -9,8 +9,8 @@ let initialState = {
         { id: 1, post: "I was a designer for 10 years", likes: 5 },
         { id: 2, post: "Now I'm starting to learn React", likes: 9 }
     ],
-    newPostText: "",
-    profile: null
+    profile: null,
+    status: ""
 };
 
 const profileReducer = (state = initialState, action) => {
@@ -18,35 +18,51 @@ const profileReducer = (state = initialState, action) => {
         case ADD_POST:
             let newPost = {
                 id: 3,
-                post: state.newPostText,
+                post: action.newPostText,
                 likes: 0
             };
             return {
                 ...state,
-                posts: [newPost, ...state.posts],
-                newPostText: ""
+                posts: [newPost, ...state.posts]
             };
 
-        case UPDATE_NEW_POST_TEXT:
-            return { ...state, newPostText: action.newText };
         case SET_USER_PROFILE:
             return { ...state, profile: action.profile };
+        case SET_STATUS:
+            return { ...state, status: action.status };
 
         default:
             return state;
     }
 };
 
-export const addPostActionCreator = () => ({ type: ADD_POST });
-export const updateNewPostTextActionCreator = text => ({
-    type: UPDATE_NEW_POST_TEXT,
-    newText: text
-});
+export const addPost = (newPostText) => ({ type: ADD_POST, newPostText });
+
 export const setUserProfile = profile => ({ type: SET_USER_PROFILE, profile });
-export const getUserProfile = userId => dispatch => {
-    //({type: SET_USER_PROFILE, userId});
+
+//thunk (server request)
+export const getUserProfile = userId => dispatch => { 
     return dimychAPI.getUserProfile(userId).then(data => {
         dispatch(setUserProfile(data));
+    });
+};
+
+export const setStatus = status => ({ type: SET_STATUS, status });
+
+//thunk: here setStatus is action to change State, and it should be invoked after getStatus from server
+export const getStatus = userId => dispatch => {
+    profileAPI.getStatus(userId)
+        .then(response => {
+            dispatch(setStatus(response.data));
+        });
+};
+//thunk: here takes 'status' from invoke, PUT it on server, and if OK, setStatus to State
+export const updateStatus = status => dispatch => {
+    profileAPI.updateStatus(status)
+        .then(response => {
+            if (response.data.resultCode === 0) {
+            dispatch(setStatus(status));
+            }
     });
 };
 

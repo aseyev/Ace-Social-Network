@@ -1,10 +1,10 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
-import {updateNewMessageBodyCreator, sendNewMessageCreator} from "../../redux/dialogs-reducer" ;
-import Dialogs from './Dialogs';
+// import { Redirect } from "react-router-dom";
 import { connect } from 'react-redux';
-import { withLoginRedirect } from '../../hoc/withLoginRedirect';
 import { compose } from 'redux';
+import { withLoginRedirect } from '../../hoc/withLoginRedirect';
+import { sendNewMessage } from "../../redux/dialogs-reducer";
+import Dialogs from './Dialogs';
 
 
 let mapStateToProps = (state) => {
@@ -13,11 +13,5 @@ let mapStateToProps = (state) => {
     }
 }
 
-let mapDispatchToProps = (dispatch) => {
-    return {
-        onSendMessageClick: () => {dispatch(sendNewMessageCreator())},
-        onNewMessageChange: (body) => {dispatch(updateNewMessageBodyCreator(body))}
-    }
-}
-export default compose ( connect( mapStateToProps, mapDispatchToProps),
-    withLoginRedirect) ( Dialogs );
+export default compose(connect(mapStateToProps, { sendNewMessage }),
+    withLoginRedirect)(Dialogs);

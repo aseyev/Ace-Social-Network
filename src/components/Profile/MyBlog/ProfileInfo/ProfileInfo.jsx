@@ -12,7 +12,7 @@ const ProfileInfo = (props) => {
         <div>
                 <div className={s.profileinfo}>
                 <div>{props.profile.fullName}</div>
-                <ProfileStatus status={"doubleclick me"} />
+                <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
                 <img src={props.profile.photos.large} alt={props.profile.fullName} />
                 <div>{props.profile.contacts.facebook}</div>
                 <div>{props.profile.lookingForAJobDescription}</div>

@@ -1,5 +1,4 @@
 const SEND_MESSAGE = "SEND_MESSAGE";
-const UPDATE_NEW_MESSAGE_BODY = "UPDATE_NEW_MESSAGE_BODY";
 
 let initialState = {
     dialogs: [
@@ -14,29 +13,28 @@ let initialState = {
         { id: 2, author: "me", message: "great what's new?" },
         { id: 3, author: "Dimych", message: "let's learn React!" },
         { id: 4, author: "me", message: "Come on, let's start!" }
-    ],
-    newMessageBody: ""
+    ]
 };
 
 const dialogsReducer = (state = initialState, action) => {
     switch (action.type) {
-        case SEND_MESSAGE: 
-            let body = state.newMessageBody;
+        case SEND_MESSAGE:
+            let body = action.newMessageBody;
             return {
                 ...state,
-                messages: [...state.messages, { id: 9, author: "me", message: body }],
-                newMessageBody: ""
+                messages: [
+                    ...state.messages,
+                    { id: 9, author: "me", message: body }
+                ]
             };
-        case UPDATE_NEW_MESSAGE_BODY:
-            return {...state,
-            newMessageBody: action.body};
-            
-        default: return state;
+
+        default:
+            return state;
     }
-}
+};
 
-export const sendNewMessageCreator = () => ({type: SEND_MESSAGE});
-export const updateNewMessageBodyCreator = body => 
-    ({type: UPDATE_NEW_MESSAGE_BODY, body: body});
-
+export const sendNewMessage = newMessageBody => ({
+    type: SEND_MESSAGE,
+    newMessageBody
+});
 export default dialogsReducer;
