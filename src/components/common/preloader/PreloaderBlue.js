@@ -1,5 +1,5 @@
 import React from 'react';
-import blueCircle from "../../..//assets/images/circles-circle.svg";
+import blueCircle from "../../../assets/images/circlesСircle.svg";
 
 let PreloaderBlue = () => {
     return <div>

@@ -140,3 +140,5 @@
 [1220/214002.176:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [1220/223452.524:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [1220/223452.545:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1220/231214.310:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1220/231214.320:ERROR:crash_report_database_win.cc(469)] failed to stat report
