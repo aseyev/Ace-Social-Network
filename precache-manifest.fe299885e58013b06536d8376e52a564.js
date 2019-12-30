@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f58bd913e9dee0224b6cd24a169f150b",
+    "revision": "e454ade5033eebdeb5b197dcb1e1e46a",
     "url": "/Ace-Social-Network/index.html"
   },
   {
-    "revision": "de0e65e6cf04542f71bd",
+    "revision": "6f250889af33aaff1eb4",
     "url": "/Ace-Social-Network/static/css/main.bdb27c0a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Ace-Social-Network/static/js/2.c6b42416.chunk.js.LICENSE"
   },
   {
-    "revision": "de0e65e6cf04542f71bd",
-    "url": "/Ace-Social-Network/static/js/main.a0910202.chunk.js"
+    "revision": "6f250889af33aaff1eb4",
+    "url": "/Ace-Social-Network/static/js/main.2d5604e3.chunk.js"
   },
   {
     "revision": "5a4a975f63636e63ca6b",
@@ -29,7 +29,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "78eb393dda06df736b4eb12f000d43b4",
-    "url": "/Ace-Social-Network/static/media/circles-circle.78eb393d.svg"
+    "url": "/Ace-Social-Network/static/media/circlesСircle.78eb393d.svg"
   },
   {
     "revision": "050d7da6bd0e6d0e3ce08771651bfeea",
