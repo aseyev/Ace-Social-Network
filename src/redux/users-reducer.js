@@ -75,11 +75,12 @@ export const toggleIsFetching = isFetching => ({ type: TOGGLE_IS_FETCHING, isFet
 export const toggleFollowingProgress = (isFetching, userId) => ({ type: TOGGLE_FOLLOWING_PROGRESS, isFetching, userId });
 
 
-//getUsersThunkCreator
-export const getUsers = (currentPage, pageSize) => { 
+//requestUsersThunkCreator
+export const requestUsers = (page, pageSize) => { 
     return ( dispatch ) => {
         dispatch( toggleIsFetching( true ) );
-            dimychAPI.getUsers( currentPage, pageSize ) 
+        dispatch( setCurrentPage ( page ) );
+            dimychAPI.getUsers( page, pageSize ) 
                 .then( data => {
                     dispatch( toggleIsFetching( false ) );
                     dispatch( setUsers( data.items ) );

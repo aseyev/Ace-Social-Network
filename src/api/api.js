@@ -8,7 +8,7 @@ const instance = axios.create ({
 
 //returns promise
 export const dimychAPI = {
-    getUsers( currentPage = 1, pageSize = 10) {
+    getUsers( currentPage = 1, pageSize = 20) {
         return instance.get(`users?page=${currentPage}&count=${pageSize}`)
             .then( resp => resp.data );
     },
