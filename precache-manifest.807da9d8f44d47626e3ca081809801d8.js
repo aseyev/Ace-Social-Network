@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e454ade5033eebdeb5b197dcb1e1e46a",
+    "revision": "55cad593a47c31c9d6ef7f6605a6ed43",
     "url": "/Ace-Social-Network/index.html"
   },
   {
-    "revision": "6f250889af33aaff1eb4",
+    "revision": "726c2a4d3ced60bc30ee",
     "url": "/Ace-Social-Network/static/css/main.bdb27c0a.chunk.css"
   },
   {
-    "revision": "013379b14b03e38004fb",
-    "url": "/Ace-Social-Network/static/js/2.c6b42416.chunk.js"
+    "revision": "cd3d993bb48e7484b60c",
+    "url": "/Ace-Social-Network/static/js/2.8ba57160.chunk.js"
   },
   {
     "revision": "95c534deb415fe087260dab4786e3626",
-    "url": "/Ace-Social-Network/static/js/2.c6b42416.chunk.js.LICENSE"
+    "url": "/Ace-Social-Network/static/js/2.8ba57160.chunk.js.LICENSE"
   },
   {
-    "revision": "6f250889af33aaff1eb4",
-    "url": "/Ace-Social-Network/static/js/main.2d5604e3.chunk.js"
+    "revision": "726c2a4d3ced60bc30ee",
+    "url": "/Ace-Social-Network/static/js/main.cdc5420b.chunk.js"
   },
   {
     "revision": "5a4a975f63636e63ca6b",
