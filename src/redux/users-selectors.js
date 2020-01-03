@@ -3,7 +3,7 @@ export const getUsers = (state) => {
 }
 
 export const getPageSize = (state) => {
-    return state.usersPage.getPageSize;
+    return state.usersPage.pageSize;
 }
 export const getTotalUsersCount = (state) => {
     return state.usersPage.totalUsersCount;

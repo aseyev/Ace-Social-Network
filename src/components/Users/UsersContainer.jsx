@@ -22,7 +22,7 @@ import {
 } from '../../redux/users-selectors';
 
 
-class UsersComponent extends React.Component {
+class UsersContainer extends React.Component {
 
     componentDidMount() {
         this.props.requestUsers ( this.props.currentPage, this.props.pageSize );
@@ -31,11 +31,9 @@ class UsersComponent extends React.Component {
         this.props.setCurrentPage(pageNumber);
         this.props.requestUsers ( pageNumber, this.props.pageSize );
     }
-
     render() {
-
-        return <div className={s.usersBG}>
-            {this.props.isFetching ? <Preloader/> : null}
+            return <div className={s.usersBG}>
+            {this.props.isFetching ? <Preloader /> : null}
             <Users totalUsersCount={this.props.totalUsersCount}
                 pageSize={this.props.pageSize}
                 currentPage={this.props.currentPage}
@@ -50,6 +48,7 @@ class UsersComponent extends React.Component {
 }
 
 let mapStateToProps = (state) => {
+    // debugger
     return {
         users: getUsers(state),
         pageSize: getPageSize(state),
@@ -63,4 +62,4 @@ let mapStateToProps = (state) => {
 export default compose (
     connect(mapStateToProps, {follow, unfollow, setCurrentPage, toggleFollowingProgress, requestUsers}), 
     withLoginRedirect
-)(UsersComponent)
+)(UsersContainer)
