@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "21f90605df0a79f952b079827f26941e",
+    "revision": "854dd8738b4126e076bc5d46fdd3d452",
     "url": "/Ace-Social-Network/index.html"
   },
   {
-    "revision": "88ae648da75da1bf8e3d",
-    "url": "/Ace-Social-Network/static/css/main.181f7e01.chunk.css"
+    "revision": "ee13b04bc04ffff5d7ea",
+    "url": "/Ace-Social-Network/static/css/main.e4553dca.chunk.css"
   },
   {
-    "revision": "70039f0cff71b42175a6",
-    "url": "/Ace-Social-Network/static/js/2.7d30feca.chunk.js"
+    "revision": "f5eacffdd42f2b9ea890",
+    "url": "/Ace-Social-Network/static/js/2.ccb82ec7.chunk.js"
   },
   {
-    "revision": "95c534deb415fe087260dab4786e3626",
-    "url": "/Ace-Social-Network/static/js/2.7d30feca.chunk.js.LICENSE"
+    "revision": "aff522dbe087deaeea306a186a35a577",
+    "url": "/Ace-Social-Network/static/js/2.ccb82ec7.chunk.js.LICENSE"
   },
   {
-    "revision": "88ae648da75da1bf8e3d",
-    "url": "/Ace-Social-Network/static/js/main.156755ba.chunk.js"
+    "revision": "ee13b04bc04ffff5d7ea",
+    "url": "/Ace-Social-Network/static/js/main.9622c0f7.chunk.js"
   },
   {
     "revision": "5a4a975f63636e63ca6b",
     "url": "/Ace-Social-Network/static/js/runtime-main.b621eb2a.js"
+  },
+  {
+    "revision": "7021f1773b0b6500f947995ae1955ea9",
+    "url": "/Ace-Social-Network/static/media/Ace-SN-design.7021f177.jpg"
   },
   {
     "revision": "e850846b4d3cd0edd0cb70b9aa348076",
@@ -36,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Ace-Social-Network/static/media/giraffe-avatar.050d7da6.png"
   },
   {
-    "revision": "aef702cb419710742b4deeb951d9a0d8",
-    "url": "/Ace-Social-Network/static/media/logoOwl.aef702cb.webp"
+    "revision": "00586b1edc924f8d66f0eda202f226a1",
+    "url": "/Ace-Social-Network/static/media/logoOwl-ef.00586b1e.png"
   },
   {
     "revision": "2e134295b82c28e642481f62eb634466",
