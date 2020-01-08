@@ -7,7 +7,7 @@ const Post = props => {
         <div className={s.post}>
             <img className={s.avatar}
                 src={giraffeAva}
-                alt="post photo"
+                alt={"post"}
             />
             <div className={s.posttext}>{props.post}</div>
             

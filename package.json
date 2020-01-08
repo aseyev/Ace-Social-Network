@@ -5,6 +5,7 @@
   "homepage": "http://aseyev.github.io/Ace-Social-Network",
   "dependencies": {
     "axios": "^0.19.0",
+    "classnames": "^2.2.6",
     "jshint": "^2.10.3",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -40,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.1.1",
+    "jest": "^24.9.0"
   }
 }

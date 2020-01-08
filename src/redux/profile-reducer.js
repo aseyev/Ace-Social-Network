@@ -6,8 +6,8 @@ const SET_STATUS = "SET_STATUS";
 let initialState = {
     posts: [
         { id: 0, post: "It's my blog", likes: 3 },
-        { id: 1, post: "I was a designer for 10 years", likes: 5 },
-        { id: 2, post: "Now I'm starting to learn React", likes: 9 }
+        { id: 1, post: "It keeps few posts in global state", likes: 5 },
+        { id: 2, post: "And realized by Flux principles with pure functions", likes: 9 }
     ],
     profile: null,
     status: ""

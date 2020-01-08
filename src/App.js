@@ -15,6 +15,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { initializeApp } from './redux/app-reducer';
 import PreloaderBlue from "./components/common/preloader/PreloaderBlue";
+import MainPage from './components/Mainpage/Main';
 
 
 
@@ -32,6 +33,9 @@ class App extends React.Component {
             <HeaderContainer />
             <NavbarContainer />
             <div className="allcontent">
+            <Route
+                    exact path="/"
+                    render={() => (<MainPage />)}/>
                 <Route
                     path="/dialogs"
                     render={() => (<DialogsContainer />)}/>

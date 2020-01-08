@@ -1,19 +1,19 @@
-* {
-    box-sizing: border-box;
-    }
+
 .app_wrapper {
-    max-width: 1170px;
+    max-width: 100%;
     margin: auto;
     display: grid;
     grid-template-areas:
         "he he"
         "ns ac";
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 120px 1fr;
     grid-template-columns: 2fr 10fr;
     /* grid-gap: 10px; */
 }
 
 .allcontent {
     grid-area: ac;
-    background-color: rgb(234, 255, 143);
+    background-color: #FFF5E0;
+    width: 100%;
+    margin-right: auto;
 }

@@ -1,0 +1,9 @@
+.pagination {
+    display: flex;
+}
+.pageNumber {
+    margin: 5px;
+}
+.selectedPage {
+    font-weight: bold;
+}

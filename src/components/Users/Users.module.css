@@ -27,6 +27,7 @@
     background-color: bisque;
     border-radius: 5px;
     margin: 5px;
+    min-width: 230px;
 }
 .userLeft {
     margin-right: 10px;

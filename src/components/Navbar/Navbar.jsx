@@ -14,10 +14,10 @@ const FriendIcon = props => {
 
 const Navbar = props => {
 
-    let FriendsListing = props.friendsPage.friends.map( d => <FriendIcon name={d.name} linkto={d.linkto} /> )
+    // let FriendsListing = props.friendsPage.friends.map( d => <FriendIcon name={d.name} linkto={d.linkto} /> )
 
     return (
-        <div  className={s.sidebar}>
+        <div className={s.sidebar}>
             <nav>
                 <ul>
                     <li>
@@ -33,17 +33,17 @@ const Navbar = props => {
                         <NavLink to="/news" activeClassName={s.activeChoice} >News</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/music" activeClassName={s.activeChoice} >Music</NavLink>
+                        <NavLink to="/updates" activeClassName={s.activeChoice} >Last Updates</NavLink>
                     </li>
                 </ul>
                 <NavLink to="/settings" activeClassName={s.activeChoice} >Settings</NavLink>
             </nav>
-            <div className={s.friendsSidebar}>
+            {/* <div className={s.friendsSidebar}>
                 <h2>Friends</h2> 
                 <div className={s.friendsList}>
                     { FriendsListing }
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

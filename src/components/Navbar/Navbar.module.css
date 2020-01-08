@@ -2,6 +2,8 @@
     grid-area: ns;
     background-color: rgb(227, 143, 235);
     padding: 20px;
+    width: 100%;
+    margin-left: auto;
 }
 
 
