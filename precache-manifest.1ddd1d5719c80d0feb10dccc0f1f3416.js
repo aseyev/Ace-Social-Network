@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "854dd8738b4126e076bc5d46fdd3d452",
+    "revision": "ad7adeec88adb2335f7d82c205e85424",
     "url": "/Ace-Social-Network/index.html"
   },
   {
-    "revision": "ee13b04bc04ffff5d7ea",
-    "url": "/Ace-Social-Network/static/css/main.e4553dca.chunk.css"
+    "revision": "fbe66045f6eab1ebbd7e",
+    "url": "/Ace-Social-Network/static/css/main.bb461d19.chunk.css"
   },
   {
-    "revision": "f5eacffdd42f2b9ea890",
-    "url": "/Ace-Social-Network/static/js/2.ccb82ec7.chunk.js"
+    "revision": "de15f88e0d797e9af7fd",
+    "url": "/Ace-Social-Network/static/js/2.7e406549.chunk.js"
   },
   {
-    "revision": "aff522dbe087deaeea306a186a35a577",
-    "url": "/Ace-Social-Network/static/js/2.ccb82ec7.chunk.js.LICENSE"
+    "revision": "606b8a018d5d09277c2c3a029df8032b",
+    "url": "/Ace-Social-Network/static/js/2.7e406549.chunk.js.LICENSE"
   },
   {
-    "revision": "ee13b04bc04ffff5d7ea",
-    "url": "/Ace-Social-Network/static/js/main.9622c0f7.chunk.js"
+    "revision": "fbe66045f6eab1ebbd7e",
+    "url": "/Ace-Social-Network/static/js/main.cb13cfd9.chunk.js"
   },
   {
     "revision": "5a4a975f63636e63ca6b",
     "url": "/Ace-Social-Network/static/js/runtime-main.b621eb2a.js"
   },
   {
-    "revision": "7021f1773b0b6500f947995ae1955ea9",
-    "url": "/Ace-Social-Network/static/media/Ace-SN-design.7021f177.jpg"
+    "revision": "9215562f5e8594066efc8886841a9e99",
+    "url": "/Ace-Social-Network/static/media/Ace-SN-design.9215562f.jpg"
   },
   {
     "revision": "e850846b4d3cd0edd0cb70b9aa348076",
