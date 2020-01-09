@@ -38,7 +38,7 @@ header h4 {
 .loginBlock {
     display: flex;
     align-items: center;
-    min-height: 60px;
+    justify-content: end;
     max-width: 240px;
     margin: 20px;
 }
@@ -46,16 +46,17 @@ header h4 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: end;
+    
 }
-
+.userAvatar {
+    margin-left: 10px;
+}
 .userAvatar img {
     /* height: 72px; */
     width: 72px;
     border: 2px solid white;
     border-radius: 50%;
     box-shadow: 0 0 15px black;
-    margin-left: 10px;
 }
 
 .userLoggedInfo {
