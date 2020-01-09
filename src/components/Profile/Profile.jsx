@@ -1,8 +1,6 @@
 import React from "react";
-import ProfileInfo from "./MyBlog/ProfileInfo/ProfileInfo";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import s from "./Profile.module.css";
-import MyBlogContainer from './MyBlog/MyBlogContainer';
-// import { updateStatus } from '../../redux/profile-reducer';
 
 
 const Profile = (props) => {
@@ -12,7 +10,6 @@ const Profile = (props) => {
             <ProfileInfo profile={props.profile} 
                 status = {props.status} 
                 updateStatus ={props.updateStatus} />
-            <MyBlogContainer />
         </div>
     );
 };

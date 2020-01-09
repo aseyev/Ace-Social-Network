@@ -1,7 +1,14 @@
 
 .app_wrapper {
     max-width: 100%;
-    margin: auto;
+    background: whitesmoke url(./assets/images/Ace-SN-design.jpg) no-repeat;
+    background-size: 1920px;
+    min-width: 680px;
+    
+}
+.app_container{
+    max-width: 940px;
+    margin: 0 auto;
     display: grid;
     grid-template-areas:
         "he he"
@@ -15,5 +22,4 @@
     grid-area: ac;
     background-color: #FFF5E0;
     width: 100%;
-    margin-right: auto;
 }

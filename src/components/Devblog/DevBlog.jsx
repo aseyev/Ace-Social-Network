@@ -1,13 +1,13 @@
 import React from "react";
-import s from "./MyBlog.module.css";
+import s from "./Devblog.module.css";
 import Post from "./Post/Post";
 import { Field, reduxForm } from "redux-form";
-import { required, maxLengthCreator } from '../../../utils/validators/validators';
-import { Textarea } from '../../common/FormsControls/FormsControls';
+import { required, maxLengthCreator } from '../../utils/validators/validators';
+import { Textarea } from '../common/FormsControls/FormsControls';
 
 const maxLength20 = maxLengthCreator(20);
 
-const MyBlog = props => {
+const DevBlog = props => {
 
     let postsListing = props.posts.map(p => <Post post={p.post} likesCount={p.likes} />)
 
@@ -46,4 +46,4 @@ const addNewBlogPostForm = (props) => {
 
 const ReduxAddNewBlogPostForm = reduxForm({ form: 'NewBlogPostBody' })(addNewBlogPostForm);
 
-export default MyBlog;
+export default DevBlog;

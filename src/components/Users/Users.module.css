@@ -1,48 +1,49 @@
-.usersBG {
-    background: rgb(129, 197, 66);
-    height: 100%;
+.users_page {
+    padding-top: 20px;
+    padding-left: 20px;
 }
-.usersList {
+.users_paginator {
+    margin: 10px;
+}
+.users_list {
     display: flex;
-    max-width: 800px;
     flex-flow: wrap;
-}
-
-.pagination ul {
-    list-style: none;
-    display: flex;
-}
-.pagination li {
-    margin: 5px;
-}
-.selectedPage {
-    font-weight: bold;
-
+    align-items: stretch;
+    
 }
 .userBlock {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 20px;
-    padding: 15px;
+    margin-right: 20px;
+    padding: 10px;
     border: 1px solid rgb(179, 179, 179);
-    background-color: bisque;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    margin: 5px;
-    min-width: 230px;
+    min-width: 260px;
 }
-.userLeft {
-    margin-right: 10px;
+.userBlock h3 {
+    margin: 0;
+    text-align: center;
 }
-.userLeft img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
+.usercard_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.usercard_info img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
 }
 
-.userCenter {
+.usercard_text {
+    margin-top: 10px;
     display: flex;
-    margin-bottom: 10px;
+    justify-content: space-around;
+    align-items: stretch;
 }
-.userRight {
-    display: flex;
-    min-width: 100px;
+.usercard_text div{
+    margin: 10px;
 }

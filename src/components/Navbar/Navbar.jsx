@@ -21,29 +21,22 @@ const Navbar = props => {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/profile" activeClassName={s.activeChoice} >Profile and Blog</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/dialogs" activeClassName={s.activeChoice} >Dialogs</NavLink>
+                        <NavLink to="/devblog" activeClassName={s.activeChoice} >Dev Blog</NavLink>
                     </li>
                     <li>
                         <NavLink to="/findusers" activeClassName={s.activeChoice} >Find Users</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/news" activeClassName={s.activeChoice} >News</NavLink>
+                        <NavLink to="/dialogs" activeClassName={s.activeChoice} >Dialogs</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/updates" activeClassName={s.activeChoice} >Last Updates</NavLink>
+                        <NavLink to="/projects" activeClassName={s.activeChoice} >Projects</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/profile" activeClassName={s.activeChoice} >Profile</NavLink>
                     </li>
                 </ul>
-                <NavLink to="/settings" activeClassName={s.activeChoice} >Settings</NavLink>
             </nav>
-            {/* <div className={s.friendsSidebar}>
-                <h2>Friends</h2> 
-                <div className={s.friendsList}>
-                    { FriendsListing }
-                </div>
-            </div> */}
         </div>
     );
 };

@@ -1,6 +1,6 @@
 import React from "react";
-import {addPost} from "../../../redux/profile-reducer" ;
-import MyBlog from './MyBlog';
+import {addPost} from "../../redux/profile-reducer" ;
+import DevBlog from './DevBlog';
 import { connect } from 'react-redux';
 
 
@@ -11,6 +11,6 @@ let mapStateToProps = (state) => {
     }
 }
 
-const MyBlogContainer = connect(mapStateToProps, {addPost})(MyBlog);
+const BlogContainer = connect(mapStateToProps, {addPost})(DevBlog);
 
-export default MyBlogContainer;
+export default BlogContainer;
