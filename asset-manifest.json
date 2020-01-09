@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Ace-Social-Network/static/css/main.bb461d19.chunk.css",
-    "main.js": "/Ace-Social-Network/static/js/main.cb13cfd9.chunk.js",
-    "main.js.map": "/Ace-Social-Network/static/js/main.cb13cfd9.chunk.js.map",
+    "main.css": "/Ace-Social-Network/static/css/main.d48675ec.chunk.css",
+    "main.js": "/Ace-Social-Network/static/js/main.bfacdd2b.chunk.js",
+    "main.js.map": "/Ace-Social-Network/static/js/main.bfacdd2b.chunk.js.map",
     "runtime-main.js": "/Ace-Social-Network/static/js/runtime-main.b621eb2a.js",
     "runtime-main.js.map": "/Ace-Social-Network/static/js/runtime-main.b621eb2a.js.map",
-    "static/js/2.7e406549.chunk.js": "/Ace-Social-Network/static/js/2.7e406549.chunk.js",
-    "static/js/2.7e406549.chunk.js.map": "/Ace-Social-Network/static/js/2.7e406549.chunk.js.map",
+    "static/js/2.4221db70.chunk.js": "/Ace-Social-Network/static/js/2.4221db70.chunk.js",
+    "static/js/2.4221db70.chunk.js.map": "/Ace-Social-Network/static/js/2.4221db70.chunk.js.map",
     "index.html": "/Ace-Social-Network/index.html",
-    "precache-manifest.1ddd1d5719c80d0feb10dccc0f1f3416.js": "/Ace-Social-Network/precache-manifest.1ddd1d5719c80d0feb10dccc0f1f3416.js",
+    "precache-manifest.4b42f5504d3c02c0f66bc83ee56245dc.js": "/Ace-Social-Network/precache-manifest.4b42f5504d3c02c0f66bc83ee56245dc.js",
     "service-worker.js": "/Ace-Social-Network/service-worker.js",
-    "static/css/main.bb461d19.chunk.css.map": "/Ace-Social-Network/static/css/main.bb461d19.chunk.css.map",
-    "static/js/2.7e406549.chunk.js.LICENSE": "/Ace-Social-Network/static/js/2.7e406549.chunk.js.LICENSE",
+    "static/css/main.d48675ec.chunk.css.map": "/Ace-Social-Network/static/css/main.d48675ec.chunk.css.map",
+    "static/js/2.4221db70.chunk.js.LICENSE": "/Ace-Social-Network/static/js/2.4221db70.chunk.js.LICENSE",
     "static/media/App.css": "/Ace-Social-Network/static/media/Ace-SN-design.9215562f.jpg",
     "static/media/cat-avatar.png": "/Ace-Social-Network/static/media/cat-avatar.e850846b.png",
     "static/media/circlesСircle.svg": "/Ace-Social-Network/static/media/circlesСircle.78eb393d.svg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b621eb2a.js",
-    "static/js/2.7e406549.chunk.js",
-    "static/css/main.bb461d19.chunk.css",
-    "static/js/main.cb13cfd9.chunk.js"
+    "static/js/2.4221db70.chunk.js",
+    "static/css/main.d48675ec.chunk.css",
+    "static/js/main.bfacdd2b.chunk.js"
   ]
 }
