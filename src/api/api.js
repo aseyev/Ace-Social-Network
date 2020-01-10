@@ -1,5 +1,5 @@
 import * as axios from "axios";
-import { saveUserPhoto } from '../redux/profile-reducer';
+// import { saveUserPhoto } from '../redux/profile-reducer';
 
 const instance = axios.create ({
     baseURL: 'https://social-network.samuraijs.com/api/1.0/',
@@ -39,7 +39,6 @@ export const authAPI = {
 }
 
 export const profileAPI = {
-    
     getProfile (userId) {
         return instance.get(`profile/`+userId)
             .then( resp => resp.data );
@@ -51,7 +50,7 @@ export const profileAPI = {
         return instance.put(`profile/status/`, {status: status})
     },
     saveUserPhoto(photoFile){
-        const formData = new formData();
+        const formData = new FormData();
         formData.append('image', photoFile);
 
         return instance.put(`profile/photo`, formData, {

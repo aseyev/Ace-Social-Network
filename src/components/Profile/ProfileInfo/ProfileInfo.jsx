@@ -8,8 +8,7 @@ const ProfileInfo = ({isOwner, profile, status, updateStatus, saveUserPhoto}) =>
 
     if (!profile) {
         return <Preloader />
-    } 
-
+    }
     const onMainPhotoSelected = (e) => {
         if (e.target.files.length) {
             saveUserPhoto (e.target.files[0]);

@@ -1,4 +1,4 @@
-import { dimychAPI, profileAPI } from '../api/api';
+import { profileAPI } from '../api/api';
 const ADD_POST = "ADD-POST";
 const SET_USER_PROFILE = "SET_USER_PROFILE";
 const SET_STATUS = "SET_STATUS";
@@ -50,8 +50,8 @@ export const savePhotoSuccess = photos => ({ type: SAVE_PHOTO_SUCCESS, photos })
 
 //thunk (server request)
 export const getUserProfile = userId => async(dispatch) => { 
-    let response = await dimychAPI.getUserProfile(userId);
-    dispatch(setUserProfile(response.data));
+    const response = await profileAPI.getProfile(userId);
+    dispatch(setUserProfile(response));
 };
 
 
@@ -71,9 +71,10 @@ export const updateStatus = status => async (dispatch) => {
 
 //thunk: here takes file from link, received from component, PUT it on server, and if OK, setStatus to State
 export const saveUserPhoto = file => async (dispatch) => {
-    let response = await profileAPI.savePhoto(file)
+    debugger
+    let response = await profileAPI.saveUserPhoto(file)
         if (response.data.resultCode === 0) {
-        dispatch(savePhotoSuccess(response.data.photos));
+        dispatch(savePhotoSuccess(response.data.data.photos));
         }
 };
 

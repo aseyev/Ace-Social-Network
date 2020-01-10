@@ -18,9 +18,9 @@ const MainPage = (props) => {
                 </div>
                 <div className={s.storyPost}>
                     <h2>My name is Anton Aseev</h2>
-                    <p>I was graduated with Master's Degree in 'Information Techs in Printing Industry',
-                        and started to work with the Design in Printing from 2001. 
-                        Since 2011, my activity has become connected with the support 
+                    <p>I was graduated with Master's Degree in 'Information Techs in Printing Industry'
+                        in 2005, and started to work with the Design in Printing. 
+                        Since 2008, my activity has become connected with the support 
                         of web-sites of those companies where I was working at that moment. 
                         And since 2018, I began to study in depth HTML5, CSS3 and JS (ES 6) in order 
                         to engage exclusively in website development. In 2019, I started programming 
