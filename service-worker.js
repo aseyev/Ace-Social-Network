@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Ace-Social-Network/precache-manifest.bb8c91935eba839dc92f682be6d61f75.js"
+  "/Ace-Social-Network/precache-manifest.f5e2d8f787796037cf2914afa0fd72c9.js"
 );
 
 self.addEventListener('message', (event) => {
