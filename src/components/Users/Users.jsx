@@ -7,6 +7,8 @@ let Users = ({ currentPage, totalUsersCount, pageSize, onPageChanged, users, ...
 
     return (
         <div className={s.users_page}>
+            <h2>Users list</h2>
+            <p>All Users are downloaded from server by Ajax requests.</p>
             <div className={s.users_paginator}>
                 <Paginator currentPage={currentPage} onPageChanged={onPageChanged}
                     totalItemsCount={totalUsersCount} pageSize={pageSize} />

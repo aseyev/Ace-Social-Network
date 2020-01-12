@@ -14,15 +14,19 @@ const Dialogs = props => {
     let messagesListing = props.dialogsPage.messages.map(m => <Message messages={m} />)
 
     let addNewMessage = (values) => {
-        props.sendMessage(values.newMessageBody);
+        props.sendNewMessage(values.newMessageBody);
     }
 
     return (
         <div className={s.dialogs}>
+            
             <div className={s.personDialogs}>
                 {dialogsListing}
             </div>
             <div className={s.messages}>
+            <h2>My Messages</h2>
+            <p>Messages are saved in the Global Store.</p>
+            <p>Some verifications of a text field are provided before adding.</p>
                 <div>{messagesListing}</div>
                 <ReduxAddMessageForm onSubmit={addNewMessage} />
             </div>

@@ -18,11 +18,14 @@ const DevBlog = props => {
 
     return (
         <div className={s.myblog}>
+            <h2>My Blog</h2>
+            <p>Posts are saved in the Global Store.</p>
+            <p>Some verifications of a text field are provided before adding.</p>
+            <p>Like counter is under construction.</p>
             <div className={s.inputPost}>
                 <ReduxAddNewBlogPostForm onSubmit={onAddPost} />
             </div>
             <div>
-                <h3>My Blog</h3>
                 {postsListing}
             </div>
         </div >
