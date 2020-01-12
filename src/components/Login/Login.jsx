@@ -5,36 +5,40 @@ import { required } from '../../utils/validators/validators';
 import { connect } from 'react-redux';
 import { login } from '../../redux/auth-reducer';
 import { Redirect } from 'react-router-dom';
-import s from "../common/FormsControls/FormsControls.module.css";
+import sf from "../common/FormsControls/FormsControls.module.css";
+import s from "../Login/login.module.css";
 
 const LoginForm = (props) => {
     return (
-        <form onSubmit={props.handleSubmit} >
-            <div>
-                <Field name={'email'}
-                    placeholder={'email'}
-                    component={Input}
-                    validate={[required]}
-                />
+        <div>
+            <form onSubmit={props.handleSubmit} >
+                <div>
+                    <Field name={'email'}
+                        placeholder={'email'}
+                        component={Input}
+                        validate={[required]}
+                    />
+                </div>
+                <div>
+                    <Field name={'password'}
+                        type={'password'}
+                        placeholder={'password'}
+                        component={Input}
+                        validate={[required]}
+                    />
+                </div>
+                <div>
+                    <Field name={'rememberMe'} type="checkbox" component={'input'} />Remember Me
             </div>
-            <div>
-                <Field name={'password'}
-                    type={'password'}
-                    placeholder={'password'}
-                    component={Input}
-                    validate={[required]}
-                />
-            </div>
-            <div>
-                <Field name={'rememberMe'} type="checkbox" component={'input'} />Remember Me
-            </div>
-            {props.error && <div className={s.formSummaryError} >
-                {props.error}
-            </div>}
-            <div>
-                <button>Login</button>
-            </div>
-        </form>
+                {props.error && <div className={sf.formSummaryError} >
+                    {props.error}
+                </div>}
+                <div>
+                    <button className={sf.my_button}>Login</button>
+                </div>
+            </form>
+        </div>
+
     )
 }
 const ReduxLoginForm = reduxForm({

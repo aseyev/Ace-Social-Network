@@ -24,7 +24,7 @@ const ProfileInfo = ({isOwner, profile, status, updateStatus, saveUserPhoto}) =>
                     <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
                 </div>
                 <img src={profile.photos.large || userTemplatePic } alt={profile.fullName} />
-                {isOwner && <input type={'file'} onChange={onMainPhotoSelected} />}
+                {isOwner && <input type={'file'} onChange={onMainPhotoSelected} className={s.my_button}/>}
                 <div>{profile.contacts.facebook}</div>
                 <div>{profile.lookingForAJobDescription}</div>
             </div>

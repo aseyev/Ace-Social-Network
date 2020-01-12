@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./Post.module.css";
 import giraffeAva from "../../../assets/images/giraffe-avatar.png"
+import Button from '@material-ui/core/Button';
 
 const Post = props => {
     return (
@@ -12,7 +13,7 @@ const Post = props => {
             <div className={s.posttext}>{props.post}</div>
             
             <div className={s.likesCount}>likes: {props.likesCount}</div>
-            <button>like</button>
+            <Button variant="contained" color="primary">like</Button>
         </div>
     );
 };

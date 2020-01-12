@@ -3,7 +3,7 @@ import s from './Header.module.css';
 import { NavLink } from 'react-router-dom';
 import logoOwl from '../../assets/images/logoOwl-ef.png';
 import userGiraffe from '../../assets/images/giraffe-avatar.png';
-
+import Button from '@material-ui/core/Button';
 
 const Header = (props) => {
     return (
@@ -24,7 +24,7 @@ const Header = (props) => {
                                 <div className={s.userLoggedInfo}>
                                     <p>{props.login}</p>
                                     <div>
-                                        <button onClick={props.logout}>Log Out</button>
+                                        <Button onClick={props.logout} variant="contained" color="primary">Log Out</Button>
                                     </div>
                                 </div>
                                 <div className={s.userAvatar}>

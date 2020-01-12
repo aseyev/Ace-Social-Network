@@ -41,7 +41,7 @@ const AddMessageForm = (props) => {
                     />
             </div>
             <div>
-                <button>Send message</button>
+                <button className={s.my_button}>Send message</button>
             </div>
         </form>
     )

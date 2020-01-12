@@ -1,8 +1,11 @@
-.pagination {
+.paginator {
     display: flex;
 }
 .pageNumber {
+    display: inline-flex;
     margin: 5px;
+    width: 25px;
+    cursor: pointer;
 }
 .selectedPage {
     font-weight: bold;

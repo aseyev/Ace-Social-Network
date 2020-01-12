@@ -71,7 +71,6 @@ export const updateStatus = status => async (dispatch) => {
 
 //thunk: here takes file from link, received from component, PUT it on server, and if OK, setStatus to State
 export const saveUserPhoto = file => async (dispatch) => {
-    debugger
     let response = await profileAPI.saveUserPhoto(file)
         if (response.data.resultCode === 0) {
         dispatch(savePhotoSuccess(response.data.data.photos));

@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./Devblog.module.css";
+import sf from "../common/FormsControls/FormsControls.module.css";
 import Post from "./Post/Post";
 import { Field, reduxForm } from "redux-form";
 import { required, maxLengthCreator } from '../../utils/validators/validators';
@@ -38,7 +39,7 @@ const addNewBlogPostForm = (props) => {
                 validate={[required, maxLength20]}
             />
             <div>
-                <button>Add post</button>
+                <button className={sf.my_button}>Add post</button>
             </div>
         </form>
     )
