@@ -54,7 +54,10 @@ const Login = (props) => {
     }
 
     return <div>
-        <h1>Authorization</h1>
+        <h2>Authorization</h2>
+        <p>by cookies</p>
+        <p>testing e-mail: <code>free@samuraijs.com</code></p>
+        <p>testing password: <code>free</code></p>
         <ReduxLoginForm onSubmit={onSubmmit} />
 
     </div>
